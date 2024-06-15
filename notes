@@ -1,0 +1,23 @@
+
+ArrayList<Integer> arrList = new ArrayList<Integer>();
+arrList.add(10);
+arrList.add(20);
+arrList.add(30);
+arrList.add(1, 90);
+
+arrList.remove(0);
+
+arrList.set(0, -10);
+
+ArrayList<ArrayList<Integer>> arr2 = new ArrayList<ArrayList<Integer>>();
+arr2.add(arrList);
+System.out.println(arr2);
+System.out.println(arrList);
+System.out.println(arrList.get(0));
+for(int index = 0; index < arrList.size(); index ++ ){
+    System.out.println(arrList.get(index));
+}
+
+for (int value: arrList){
+    System.out.println(value);
+}
